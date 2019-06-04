@@ -175,6 +175,16 @@
             android:dependency="lockscreen_weather_enabled"
             android:fragment="com.derpquest.settings.external.OmniJawsSettings" />
 
+        <com.derpquest.settings.preferences.SystemSettingListPreference
+            android:key="lockscreen_weather_style"
+            android:title="@string/lockscreen_weather_style_title"
+            android:dialogTitle="@string/lockscreen_weather_style_title"
+            android:entries="@array/lockscreen_weather_style_entries"
+            android:entryValues="@array/lockscreen_weather_style_values"
+            android:defaultValue="1"
+            android:dependency="lockscreen_weather_enabled"
+            android:summary="%s" />
+
         <!-- Owner Info -->
         <Preference
             android:key="lockscreen_ownerinfo"
